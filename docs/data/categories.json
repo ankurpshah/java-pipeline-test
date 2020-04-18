@@ -6,13 +6,13 @@
       "name" : "Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.linkText: Logout' (tried for 10 second(s) with 500 MILLISECONDS interval)",
       "children" : [ {
         "name" : "checkValidLogin",
-        "uid" : "678552e7dbf3c776",
+        "uid" : "f88fd0674c56a748",
         "parentUid" : "2c13dfe8bc0bdf0494e14bc42dba51f3",
         "status" : "broken",
         "time" : {
-          "start" : 1587180473875,
-          "stop" : 1587180496947,
-          "duration" : 23072
+          "start" : 1587180654068,
+          "stop" : 1587180676808,
+          "duration" : 22740
         },
         "flaky" : false,
         "parameters" : [ ]

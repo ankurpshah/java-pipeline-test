@@ -4,13 +4,13 @@
     "name" : "Check Credentials",
     "children" : [ {
       "name" : "checkValidLogin",
-      "uid" : "678552e7dbf3c776",
+      "uid" : "f88fd0674c56a748",
       "parentUid" : "a861a3606168f6e1e2c72a200c4e5cf3",
       "status" : "broken",
       "time" : {
-        "start" : 1587180473875,
-        "stop" : 1587180496947,
-        "duration" : 23072
+        "start" : 1587180654068,
+        "stop" : 1587180676808,
+        "duration" : 22740
       },
       "flaky" : false,
       "parameters" : [ ]
