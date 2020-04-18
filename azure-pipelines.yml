@@ -6,8 +6,21 @@
 trigger:
 - master
 
+resources:
+  containers:
+  - container: selenium-hub
+    image: selenium/hub:latest
+    ports:
+    - 4444:4444
+  - container: selenium-node
+    image: selenium/node-chrome:latest
+
 pool:
   vmImage: 'ubuntu-latest'
+
+services:
+  nginx: selenium-hub
+  redis: selenium-node
 
 steps:
 - task: Maven@3
@@ -20,3 +33,6 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'clean verify allure:report -P grid -DsuiteXmlFile=smoke.suite.xml'
+
+
+    
