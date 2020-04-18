@@ -1,0 +1,73 @@
+{
+  "summary" : {
+    "reportName" : "Allure Report",
+    "testRuns" : [ ],
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "time" : {
+      "start" : 1587179334915,
+      "stop" : 1587179338216,
+      "duration" : 3301,
+      "minDuration" : 3301,
+      "maxDuration" : 3301,
+      "sumDuration" : 3301
+    }
+  },
+  "environment" : [ ],
+  "suites" : {
+    "total" : 1,
+    "items" : [ {
+      "uid" : "26c3355bfe48b4d973f7dd61ae44b0c7",
+      "name" : "Smoke",
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 1,
+        "unknown" : 0,
+        "total" : 1
+      }
+    } ]
+  },
+  "history-trend" : [ {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  } ],
+  "behaviors" : {
+    "total" : 1,
+    "items" : [ {
+      "uid" : "a861a3606168f6e1e2c72a200c4e5cf3",
+      "name" : "Check Credentials",
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 1,
+        "unknown" : 0,
+        "total" : 1
+      }
+    } ]
+  },
+  "executors" : [ {
+    "name" : "Maven",
+    "type" : "maven",
+    "buildName" : "selenium-testng-allure-maven"
+  } ],
+  "categories" : {
+    "total" : 0,
+    "items" : [ ]
+  },
+  "launches" : [ ]
+}

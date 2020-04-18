@@ -1,0 +1,11 @@
+[ {
+  "uid" : "420c2985217d5dec",
+  "name" : "checkValidLogin",
+  "time" : {
+    "start" : 1587179334915,
+    "stop" : 1587179338216,
+    "duration" : 3301
+  },
+  "status" : "passed",
+  "severity" : "critical"
+} ]

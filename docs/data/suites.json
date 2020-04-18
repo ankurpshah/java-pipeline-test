@@ -1,0 +1,29 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "Smoke",
+    "children" : [ {
+      "name" : "smoke",
+      "children" : [ {
+        "name" : "com.qlitelabs.tests.LoginTests",
+        "children" : [ {
+          "name" : "checkValidLogin",
+          "uid" : "420c2985217d5dec",
+          "parentUid" : "cd1aad79cd4a75c28c66ae343d4388b4",
+          "status" : "passed",
+          "time" : {
+            "start" : 1587179334915,
+            "stop" : 1587179338216,
+            "duration" : 3301
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "cd1aad79cd4a75c28c66ae343d4388b4"
+      } ],
+      "uid" : "dfdcfe6f419beaa15ac1d1716a6a2f82"
+    } ],
+    "uid" : "26c3355bfe48b4d973f7dd61ae44b0c7"
+  } ],
+  "name" : "suites"
+}

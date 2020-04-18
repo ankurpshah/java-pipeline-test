@@ -1,0 +1,21 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "com.qlitelabs.tests.LoginTests",
+    "children" : [ {
+      "name" : "checkValidLogin",
+      "uid" : "420c2985217d5dec",
+      "parentUid" : "55ccc58c658e1d5e457b58d884caf94e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587179334915,
+        "stop" : 1587179338216,
+        "duration" : 3301
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "com.qlitelabs.tests.LoginTests"
+  } ],
+  "name" : "packages"
+}
