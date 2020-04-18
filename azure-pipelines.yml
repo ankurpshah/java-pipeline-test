@@ -8,19 +8,19 @@ trigger:
 
 resources:
   containers:
-  - container: selenium-hub
+  - container: seleniumhub
     image: selenium/hub:latest
     ports:
     - 4444:4444
-  - container: selenium-node
+  - container: seleniumnode
     image: selenium/node-chrome:latest
 
 pool:
   vmImage: 'ubuntu-latest'
 
 services:
-  nginx: selenium-hub
-  redis: selenium-node
+  nginx: seleniumhub
+  redis: seleniumnode
 
 steps:
 - task: Maven@3
