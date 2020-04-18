@@ -2,19 +2,20 @@
   "6ff2c4dca81958d6372efceeff03c64d" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "420c2985217d5dec",
-      "status" : "passed",
+      "uid" : "678552e7dbf3c776",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.linkText: Logout' (tried for 10 second(s) with 500 MILLISECONDS interval)",
       "time" : {
-        "start" : 1587179334915,
-        "stop" : 1587179338216,
-        "duration" : 3301
+        "start" : 1587180473875,
+        "stop" : 1587180496947,
+        "duration" : 23072
       }
     } ]
   }
