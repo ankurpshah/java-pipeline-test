@@ -49,7 +49,7 @@ steps:
 - task: AllureGenerate@1
   inputs:
     resultsDir: '$(System.DefaultWorkingDirectory)/target/allure-results'
-    targetDir: 'allure-report/$(Build.BuildNumber)'
+    targetDir: '$(System.DefaultWorkingDirectory)/target/allure-report/$(Build.BuildNumber)'
 
 - publish: $(System.DefaultWorkingDirectory)/target/site/allure-maven-plugin/
   artifact: WebApp
