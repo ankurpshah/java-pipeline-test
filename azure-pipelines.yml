@@ -45,7 +45,7 @@ steps:
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'clean verify allure:report -P grid -DsuiteXmlFile=smoke.suite.xml -B -e'
+    goals: 'clean verify allure:report -P grid -DsuiteXmlFile=smoke.suite.xml -B -e -Dmaven.repo.local=$(MAVEN_CACHE_FOLDER)'
 - publish: $(System.DefaultWorkingDirectory)/target/site/allure-maven-plugin/
   artifact: Allure-reports    
 
