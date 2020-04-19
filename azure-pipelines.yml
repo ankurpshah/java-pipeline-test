@@ -61,7 +61,7 @@ steps:
 - task: publishHtml@1
   inputs:
     artifactName: 'AllureReport'
-    htmlFilePath: 'target/site/allure-maven-plugin/index.html'
+    htmlFilePath: 'target/site/allure-maven-plugin/'
 
 - task: PublishTestResults@2
   inputs:
