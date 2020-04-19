@@ -46,10 +46,6 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'clean verify allure:report -P grid -DsuiteXmlFile=smoke.suite.xml -B -e -Dmaven.repo.local=$(MAVEN_CACHE_FOLDER)'
-- task: AllureGenerate@1
-  inputs:
-    resultsDir: '$(System.DefaultWorkingDirectory)/target/allure-results'
-    targetDir: '$(System.DefaultWorkingDirectory)/target/allure-report/$(Build.BuildNumber)'
 
 - publish: $(System.DefaultWorkingDirectory)/target/site/allure-maven-plugin/
   artifact: WebApp
