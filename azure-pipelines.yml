@@ -14,13 +14,14 @@ resources:
     - 4444:4444
   - container: seleniumnode
     image: selenium/node-chrome:latest
+    options: "-e HUB_HOST=seleniumhub"
 
 pool:
   vmImage: 'ubuntu-latest'
 
 services:
-  nginx: seleniumhub
-  redis: seleniumnode
+  seleniumhub: seleniumhub
+  seleniumnode: seleniumnode
 
 steps:
 - script: |
