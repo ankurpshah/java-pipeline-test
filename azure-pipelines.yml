@@ -25,7 +25,7 @@ services:
 
 steps:
 - script: |
-    curl http://seleniumhub:4444/grid/console
+    curl http://localhost:4444/grid/console
 
 # steps:
 # - task: Cache@2
