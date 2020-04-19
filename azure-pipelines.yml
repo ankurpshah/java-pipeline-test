@@ -23,6 +23,10 @@ services:
   seleniumhub: seleniumhub
   seleniumnode: seleniumnode
 
+variables:
+  MAVEN_CACHE_FOLDER: $(Pipeline.Workspace)/.m2/repository
+  MAVEN_OPTS: '-Dmaven.repo.local=$(MAVEN_CACHE_FOLDER)'
+
 steps:
 - task: Cache@2
   inputs:
@@ -41,7 +45,11 @@ steps:
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'clean verify allure:report -P grid -DsuiteXmlFile=smoke.suite.xml'
+    goals: 'clean verify allure:report -P grid -DsuiteXmlFile=smoke.suite.xml -B -e'
+- publish: $(System.DefaultWorkingDirectory)/target/site/allure-maven-plugin/
+  artifact: Allure-reports    
+
+
 
 
     
