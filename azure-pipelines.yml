@@ -56,8 +56,3 @@ steps:
   inputs:
     testResultsFormat: 'JUnit'
     testResultsFiles: '$(System.DefaultWorkingDirectory)/**/TEST-*.xml'
-
-
-
-
-    
