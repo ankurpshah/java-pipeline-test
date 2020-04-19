@@ -18,10 +18,10 @@ public class LoginTests extends TestBase {
     @Story("Check Credentials")
     @Severity(SeverityLevel.CRITICAL)
     @Issues({
-            @Issue("MYISSUE-1"),
-            @Issue("MYISSUE-2")
+            @Issue("5"),
+            @Issue("3")
     })
-    @TmsLink("TMS-123")
+    @TmsLink("3")
     public void checkValidLogin() {
         LoginPage loginPage = new LoginPage(getDriver());
         HomePage detailsPage = loginPage.enterValidCredentials(Constants.USER_NAME, Constants.PASSWORD);
