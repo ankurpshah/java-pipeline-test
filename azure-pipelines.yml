@@ -48,12 +48,13 @@ steps:
     goals: 'clean verify allure:report -P grid -DsuiteXmlFile=smoke.suite.xml -B -e -Dmaven.repo.local=$(MAVEN_CACHE_FOLDER)'
 - task: AllureGenerate@1
   inputs:
-    resultsDir: '$(Pipeline.Workspace)/target/allure-results'
+    resultsDir: '$(Pipeline.Workspace)/s/target/allure-results'
     targetDir: 'allure-report/$(Build.BuildNumber)'
 
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit'
+    testResultsFiles: '**/TEST-*.xml'
 
 
 
