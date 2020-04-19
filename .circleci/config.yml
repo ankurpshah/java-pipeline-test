@@ -52,3 +52,6 @@ jobs: # a collection of steps
           path: ~/test-results/junit
       - store_artifacts:
           path: ~/allure-report
+    branches:
+      ignore:
+        - master
