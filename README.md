@@ -34,4 +34,3 @@
   
 ## Reports
 - Allure Reports will be generated in `target/allure-results` folder.
-
