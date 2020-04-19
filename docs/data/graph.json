@@ -1,10 +1,10 @@
 [ {
-  "uid" : "604f68292b83fe84",
+  "uid" : "86190e677c1f215a",
   "name" : "checkValidLogin",
   "time" : {
-    "start" : 1587261077478,
-    "stop" : 1587261080920,
-    "duration" : 3442
+    "start" : 1587261161733,
+    "stop" : 1587261164994,
+    "duration" : 3261
   },
   "status" : "passed",
   "severity" : "critical"
