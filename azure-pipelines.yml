@@ -52,16 +52,11 @@ steps:
 #     resultsDir: '$(System.DefaultWorkingDirectory)/target/allure-results'
 #     targetDir: 'allure-report/$(Build.BuildNumber)'
 
-- task: PublishPipelineArtifact@1
+- task: PublishBuildArtifacts@1
   inputs:
-    targetPath: '$(System.DefaultWorkingDirectory)/target/site/allure-maven-plugin/'
-    artifact: 'AllureReport'
-    publishLocation: 'pipeline'
-
-- task: publishHtml@1
-  inputs:
-    artifactName: 'AllureReport'
-    htmlFilePath: 'target/site/allure-maven-plugin/'
+    PathtoPublish: '$(System.DefaultWorkingDirectory)/target/site/allure-maven-plugin/'
+    ArtifactName: 'AllureReport'
+    publishLocation: 'Container'
 
 - task: PublishTestResults@2
   inputs:
