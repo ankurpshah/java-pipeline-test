@@ -24,7 +24,7 @@ services:
 
 steps:
 - script: |
-    curl localhost:4444
+    curl http://localhost:4444/grid/console
 
 # steps:
 # - task: Maven@3
