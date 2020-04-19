@@ -42,13 +42,14 @@ steps:
     mavenOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '1.8'
-    codeCoverageToolOption: 'cobertura'
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'clean verify allure:report -P grid -DsuiteXmlFile=smoke.suite.xml -B -e -Dmaven.repo.local=$(MAVEN_CACHE_FOLDER)'
-- publish: $(System.DefaultWorkingDirectory)/target/site/allure-maven-plugin/
-  artifact: Allure-reports    
+- task: PublishBuildArtifacts@1
+  inputs:
+    pathToPublish: '$(System.DefaultWorkingDirectory)/target/site/allure-maven-plugin/'
+    artifactName: Allure-reports    
 
 
 
