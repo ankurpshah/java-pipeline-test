@@ -46,10 +46,22 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'clean verify allure:report -P grid -DsuiteXmlFile=smoke.suite.xml -B -e -Dmaven.repo.local=$(MAVEN_CACHE_FOLDER)'
+
 # - task: AllureGenerate@1
 #   inputs:
 #     resultsDir: '$(System.DefaultWorkingDirectory)/target/allure-results'
 #     targetDir: 'allure-report/$(Build.BuildNumber)'
+
+# - task: PublishPipelineArtifact@1
+#   inputs:
+#     targetPath: '$(System.DefaultWorkingDirectory)/target/site/allure-maven-plugin/'
+#     artifact: 'Allure Report'
+#     publishLocation: 'pipeline'
+
+- task: publishHtml@1
+  inputs:
+    artifactName: 'AllureReport'
+    htmlFilePath: '$(System.DefaultWorkingDirectory)/target/site/allure-maven-plugin/'
 
 - task: PublishTestResults@2
   inputs:
