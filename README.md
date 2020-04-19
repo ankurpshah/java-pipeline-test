@@ -2,8 +2,9 @@
 
 ## Project Status
 
-![GitHub Project Status](https://github.com/qlitelabs/selenium-testng-allure-maven/workflows/Java%20CI%20with%20Maven/badge.svg)
-[![CircleCI Status](https://circleci.com/gh/qlitelabs/selenium-testng-allure-maven/tree/master.svg?style=svg)](https://circleci.com/gh/qlitelabs/selenium-testng-allure-maven/tree/master)
+![Java CI with Maven](https://github.com/ankurpshah/java-pipeline-test/workflows/Java%20CI%20with%20Maven/badge.svg)
+[![CircleCI](https://circleci.com/gh/ankurpshah/java-pipeline-test.svg?style=svg)](https://circleci.com/gh/ankurpshah/java-pipeline-test)
+[![Build Status](https://tfsprodeus2su1.visualstudio.com/Ad73a633d-7dac-4f03-ad1e-a06d62d27462/Windows8%20Apps/_apis/build/status/ankurpshah.java-pipeline-test?branchName=master)](https://tfsprodeus2su1.visualstudio.com/Ad73a633d-7dac-4f03-ad1e-a06d62d27462/Windows8%20Apps/_build/latest?definitionId=1&branchName=master)
 
 ## Pre-requisite
 
