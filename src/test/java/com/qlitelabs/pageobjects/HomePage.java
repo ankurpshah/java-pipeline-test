@@ -19,6 +19,10 @@ public class HomePage extends Page {
         wait.until(ExpectedConditions.visibilityOf(lblWelcome));
     }
 
+    public String getPageTitle() {
+        return driver.getTitle();
+    }
+
     public LoginPage logOut() {
         WebElementHelper.click(lblWelcome);
         WebElementHelper.click(linkLogout);

@@ -22,6 +22,10 @@ public class LoginPage extends Page {
         wait.until(ExpectedConditions.visibilityOfAllElements(Arrays.asList(elements)));
     }
 
+    public WebElement getLoginButton() {
+        return btnLogin;
+    }
+
     public HomePage enterValidCredentials(String userName, String password) {
         WebElementHelper.sendKeys(txtUsername, userName);
         WebElementHelper.sendKeys(txtPassword, password);

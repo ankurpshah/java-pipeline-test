@@ -4,6 +4,8 @@ import com.qlitelabs.base.TestBase;
 import com.qlitelabs.constants.Constants;
 import com.qlitelabs.core.WebElementHelper;
 import io.qameta.allure.*;
+
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.qlitelabs.pageobjects.HomePage;
 import com.qlitelabs.pageobjects.LoginPage;
@@ -24,7 +26,9 @@ public class LoginTests extends TestBase {
     @TmsLink("3")
     public void checkValidLogin() {
         LoginPage loginPage = new LoginPage(getDriver());
+        Assert.assertEquals(loginPage.getLoginButton().getAttribute("value"), "LOGIN");
         HomePage detailsPage = loginPage.enterValidCredentials(Constants.USER_NAME, Constants.PASSWORD);
+        // Assert.assertEquals(detailsPage.getPageTitle(), "OrangeHRM");
         WebElementHelper.takeScreenShot();
         detailsPage.logOut();
     }
