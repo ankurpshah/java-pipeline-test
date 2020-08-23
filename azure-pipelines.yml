@@ -17,7 +17,7 @@ resources:
     options: "-e HUB_HOST=seleniumhub"
 
 pool:
-  vmImage: 'windows-latest'
+  vmImage: 'ubuntu-latest'
 
 services:
   seleniumhub: seleniumhub
