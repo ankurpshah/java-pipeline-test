@@ -56,3 +56,11 @@ steps:
   inputs:
     testResultsFormat: 'JUnit'
     testResultsFiles: '$(System.DefaultWorkingDirectory)/**/TEST-*.xml'
+
+- task: AzureFileCopy@4
+  inputs:
+    SourcePath: '$(System.DefaultWorkingDirectory)/target/site/allure-maven-plugin/'
+    azureSubscription: 'Azure subscription 1(f38daa57-587f-4976-91ba-cc37f015fb73)'
+    Destination: 'AzureBlob'
+    storage: 'ankurstaticcontent'
+    ContainerName: 'allurereport'
