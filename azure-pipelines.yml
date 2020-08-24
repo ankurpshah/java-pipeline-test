@@ -57,31 +57,9 @@ steps:
     testResultsFormat: 'JUnit'
     testResultsFiles: '$(System.DefaultWorkingDirectory)/**/TEST-*.xml'
 
-- task: UsePythonVersion@0
+- task: AzureCLI@2
   inputs:
-    versionSpec: '3.x'
-    architecture: 'x64'
-
-- script: python -m pip install --upgrade pip
-  displayName: 'Upgrade pip'
-
-- script: pip install --pre azure-cli --extra-index-url https://azurecliprod.blob.core.windows.net/edge
-  displayName: 'upgrade azure cli'
-
-- script: az --version
-  displayName: 'Show Azure CLI version'
-
-- script: az extension add -n azure-devops
-  displayName: 'Install Azure DevOps Extension'
-
-- script: echo ${AZURE_DEVOPS_CLI_PAT} | az devops login
-  env:
-    AZURE_DEVOPS_CLI_PAT: $(System.AccessToken)
-  displayName: 'Login Azure DevOps Extension'
-
-- script: az devops configure --defaults organization=https://dev.azure.com/geek2nerd project="Movie Search Web App" --use-git-aliases true
-  displayName: 'Set default Azure DevOps organization and project'
-
-- script: |
-    az storage blob directory upload -c allurereport --account-name ankurstaticcontent -s "$(System.DefaultWorkingDirectory)/target/site/allure-maven-plugin/" -d aug_20_2020_11_00 --recursive
-  displayName: 'Copy Artifacts'
+    azureSubscription: 'Azure subscription 1(1)(f38daa57-587f-4976-91ba-cc37f015fb73)'
+    scriptType: 'bash'
+    scriptLocation: 'inlineScript'
+    inlineScript: 'az storage blob upload-batch -d mycontainer --account-name ankurstaticcontent --account-key $STORAGE_ACCOUNT_KEY -s $(System.DefaultWorkingDirectory)/target/site/allure-maven-plugin/ -d aug_20_2020_11_00 --pattern *'
