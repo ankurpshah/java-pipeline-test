@@ -62,4 +62,5 @@ steps:
     azureSubscription: 'Azure subscription 1(1)(f38daa57-587f-4976-91ba-cc37f015fb73)'
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
-    inlineScript: '/usr/bin/az storage blob upload-batch -d mycontainer --account-name ankurstaticcontent -s $(System.DefaultWorkingDirectory)/target/site/allure-maven-plugin/ --pattern *'
+    inlineScript: '/usr/bin/az storage blob upload-batch -d $web --account-name ankurstaticcontent -s $(System.DefaultWorkingDirectory)/target/site/allure-maven-plugin/ --pattern *'
+
