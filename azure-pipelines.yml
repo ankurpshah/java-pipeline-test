@@ -65,5 +65,6 @@ steps:
     scriptLocation: 'inlineScript'
     inlineScript: |
       today_date=$(date --date=@${DATE} '+%Y-%m-%d_%H_%M')
+      echo "Current DateTime: ${today_date}"
       /usr/bin/az storage blob upload-batch --debug --account-name ankurstaticcontent --account-key $ACCOUNT_KEY --destination allure-reports --destination-path ${today_date} --source $(System.DefaultWorkingDirectory)/target/site/allure-maven-plugin
       echo "https://ankurstaticcontent.blob.core.windows.net/${today_date}/allure-reports/index.html"
