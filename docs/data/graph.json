@@ -1,11 +1,21 @@
 [ {
-  "uid" : "b3d4b651e56203bb",
+  "uid" : "ea897a1785e1547c",
+  "name" : "instantiateDriverObject",
+  "time" : {
+    "start" : 1598316588292,
+    "stop" : 1598316588294,
+    "duration" : 2
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "68117acbc7a1dafa",
   "name" : "checkValidLogin",
   "time" : {
-    "start" : 1598249656773,
-    "stop" : 1598249660200,
-    "duration" : 3427
+    "start" : 1598316588314,
+    "stop" : 1598316588315,
+    "duration" : 1
   },
-  "status" : "passed",
+  "status" : "skipped",
   "severity" : "critical"
 } ]

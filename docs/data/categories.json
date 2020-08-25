@@ -1,5 +1,25 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
-  "children" : [ ],
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "null value in entry: url=null",
+      "children" : [ {
+        "name" : "instantiateDriverObject",
+        "uid" : "ea897a1785e1547c",
+        "parentUid" : "54e773b29bd010a0cd1cd45abf66299d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1598316588292,
+          "stop" : 1598316588294,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "54e773b29bd010a0cd1cd45abf66299d"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
   "name" : "categories"
 }

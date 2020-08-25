@@ -1,25 +1,37 @@
 {
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "children" : [ {
-    "name" : "fv-az65",
+    "name" : "fv-az50",
     "children" : [ {
-      "name" : "3513@fv-az65.main(1)",
+      "name" : "3587@fv-az50.main(1)",
       "children" : [ {
-        "name" : "checkValidLogin",
-        "uid" : "b3d4b651e56203bb",
-        "parentUid" : "77f9add6f35909fb90b78633b84501ac",
-        "status" : "passed",
+        "name" : "instantiateDriverObject",
+        "uid" : "ea897a1785e1547c",
+        "parentUid" : "6cfb6a1c298c6d05853a44881b9c5d59",
+        "status" : "broken",
         "time" : {
-          "start" : 1598249656773,
-          "stop" : 1598249660200,
-          "duration" : 3427
+          "start" : 1598316588292,
+          "stop" : 1598316588294,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "checkValidLogin",
+        "uid" : "68117acbc7a1dafa",
+        "parentUid" : "6cfb6a1c298c6d05853a44881b9c5d59",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1598316588314,
+          "stop" : 1598316588315,
+          "duration" : 1
         },
         "flaky" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "77f9add6f35909fb90b78633b84501ac"
+      "uid" : "6cfb6a1c298c6d05853a44881b9c5d59"
     } ],
-    "uid" : "4c19fc17b7f527548406e985354fc9ca"
+    "uid" : "c5c09a4ad6ca0720b30da8c5cd276185"
   } ],
   "name" : "timeline"
 }
