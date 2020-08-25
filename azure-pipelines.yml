@@ -45,7 +45,7 @@ steps:
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'clean verify allure:report -P grid -DsuiteXmlFile=smoke.suite.xml -Dapp.url=$APP_URL -Dusername=$USER_NAME -Dpassword=$PASSWORD -B -e -Dmaven.repo.local=$(MAVEN_CACHE_FOLDER)'
+    goals: 'clean verify allure:report -P grid -DsuiteXmlFile=smoke.suite.xml -Dapp.url=${APP_URL} -Dusername=${USER_NAME} -Dpassword=${PASSWORD} -B -e -Dmaven.repo.local=$(MAVEN_CACHE_FOLDER)'
 
 - task: PublishPipelineArtifact@1
   inputs:
