@@ -2,12 +2,12 @@
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "children" : [ {
     "name" : "instantiateDriverObject",
-    "uid" : "61175d357ba170b",
+    "uid" : "fefc6465994f7fcf",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "broken",
     "time" : {
-      "start" : 1598318040406,
-      "stop" : 1598318040409,
+      "start" : 1598318258721,
+      "stop" : 1598318258724,
       "duration" : 3
     },
     "flaky" : false,
@@ -16,13 +16,13 @@
     "name" : "Check Credentials",
     "children" : [ {
       "name" : "checkValidLogin",
-      "uid" : "3758dfad46995210",
+      "uid" : "a432c8f4b8861219",
       "parentUid" : "a861a3606168f6e1e2c72a200c4e5cf3",
       "status" : "skipped",
       "time" : {
-        "start" : 1598318040435,
-        "stop" : 1598318040439,
-        "duration" : 4
+        "start" : 1598318258758,
+        "stop" : 1598318258760,
+        "duration" : 2
       },
       "flaky" : false,
       "parameters" : [ ]

@@ -9,13 +9,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "3758dfad46995210",
+      "uid" : "a432c8f4b8861219",
       "status" : "skipped",
       "statusDetails" : "null value in entry: url=null",
       "time" : {
-        "start" : 1598318040435,
-        "stop" : 1598318040439,
-        "duration" : 4
+        "start" : 1598318258758,
+        "stop" : 1598318258760,
+        "duration" : 2
       }
     } ]
   },
@@ -29,12 +29,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "61175d357ba170b",
+      "uid" : "fefc6465994f7fcf",
       "status" : "broken",
       "statusDetails" : "null value in entry: url=null",
       "time" : {
-        "start" : 1598318040406,
-        "stop" : 1598318040409,
+        "start" : 1598318258721,
+        "stop" : 1598318258724,
         "duration" : 3
       }
     } ]
