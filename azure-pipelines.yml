@@ -64,5 +64,6 @@ steps:
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
     inlineScript: |
-      /usr/bin/az storage blob upload-batch --debug --account-name ankurstaticcontent --account-key $ACCOUNT_KEY --destination allure-reports --destination-path aug_24_2020_02_00 --source $(System.DefaultWorkingDirectory)/target/site/allure-maven-plugin
-      echo https://ankurstaticcontent.blob.core.windows.net/aug_24_2020_02_00/allure-reports/index.html
+      today_date=$(date --date=@${DATE} '+%Y-%m-%d_%H_%M')
+      /usr/bin/az storage blob upload-batch --debug --account-name ankurstaticcontent --account-key $ACCOUNT_KEY --destination allure-reports --destination-path ${today_date} --source $(System.DefaultWorkingDirectory)/target/site/allure-maven-plugin
+      echo "https://ankurstaticcontent.blob.core.windows.net/${today_date}/allure-reports/index.html"
