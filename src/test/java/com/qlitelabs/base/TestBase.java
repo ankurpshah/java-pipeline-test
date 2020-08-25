@@ -19,9 +19,6 @@ public class TestBase {
         String sessionId = ((RemoteWebDriver) getDriver()).getSessionId().toString();
         getDriver().manage().deleteAllCookies();
         getDriver().manage().window().maximize();
-        System.out.println(">>>>>>>>>>>>>>>>USERNAME: " + USER_NAME);
-        System.out.println(">>>>>>>>>>>>>>>>PASSWORD: " + PASSWORD);
-        System.out.println(">>>>>>>>>>>>>>>>APP_URL: " + APP_URL);
         getDriver().get(APP_URL);
 
     }
