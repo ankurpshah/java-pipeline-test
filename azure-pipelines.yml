@@ -37,6 +37,7 @@ steps:
     path: $(MAVEN_CACHE_FOLDER)
   displayName: Cache Maven local repo
 - task: Maven@3
+  env
   inputs:
     mavenPomFile: 'pom.xml'
     mavenOptions: '-Xmx3072m'
@@ -45,7 +46,7 @@ steps:
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'clean verify allure:report -P grid -DsuiteXmlFile=smoke.suite.xml -Dapp.url=${APP_URL} -Dusername=${USER_NAME} -Dpassword=${PASSWORD} -B -e -Dmaven.repo.local=$(MAVEN_CACHE_FOLDER)'
+    goals: 'clean verify allure:report -P grid -DsuiteXmlFile=smoke.suite.xml -Dapp.url=$(APP_URL) -Dusername=$(USER_NAME) -Dpassword=$(PASSWORD) -B -e -Dmaven.repo.local=$(MAVEN_CACHE_FOLDER)'
 
 - task: PublishPipelineArtifact@1
   inputs:
