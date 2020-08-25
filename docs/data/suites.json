@@ -8,25 +8,25 @@
         "name" : "com.qlitelabs.tests.LoginTests",
         "children" : [ {
           "name" : "instantiateDriverObject",
-          "uid" : "ea897a1785e1547c",
+          "uid" : "61175d357ba170b",
           "parentUid" : "cd1aad79cd4a75c28c66ae343d4388b4",
           "status" : "broken",
           "time" : {
-            "start" : 1598316588292,
-            "stop" : 1598316588294,
-            "duration" : 2
+            "start" : 1598318040406,
+            "stop" : 1598318040409,
+            "duration" : 3
           },
           "flaky" : false,
           "parameters" : [ ]
         }, {
           "name" : "checkValidLogin",
-          "uid" : "68117acbc7a1dafa",
+          "uid" : "3758dfad46995210",
           "parentUid" : "cd1aad79cd4a75c28c66ae343d4388b4",
           "status" : "skipped",
           "time" : {
-            "start" : 1598316588314,
-            "stop" : 1598316588315,
-            "duration" : 1
+            "start" : 1598318040435,
+            "stop" : 1598318040439,
+            "duration" : 4
           },
           "flaky" : false,
           "parameters" : [ ]

@@ -6,13 +6,13 @@
       "name" : "null value in entry: url=null",
       "children" : [ {
         "name" : "instantiateDriverObject",
-        "uid" : "ea897a1785e1547c",
+        "uid" : "61175d357ba170b",
         "parentUid" : "54e773b29bd010a0cd1cd45abf66299d",
         "status" : "broken",
         "time" : {
-          "start" : 1598316588292,
-          "stop" : 1598316588294,
-          "duration" : 2
+          "start" : 1598318040406,
+          "stop" : 1598318040409,
+          "duration" : 3
         },
         "flaky" : false,
         "parameters" : [ ]
