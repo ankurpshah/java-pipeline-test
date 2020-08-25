@@ -60,10 +60,10 @@ steps:
 
 - task: AzureCLI@2
   inputs:
-    azureSubscription: 'Azure subscription 1(f38daa57-587f-4976-91ba-cc37f015fb73)'
+    azureSubscription: '$(SUBSCRIPTION_NAME)'
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
     inlineScript: |
       today_date=$(date +'%Y-%m-%d_%H_%M')
-      /usr/bin/az storage blob upload-batch --debug --account-name ankurstaticcontent --account-key $ACCOUNT_KEY --destination allure-reports --destination-path ${today_date} --source $(System.DefaultWorkingDirectory)/target/site/allure-maven-plugin
-      echo "https://ankurstaticcontent.blob.core.windows.net/allure-reports/${today_date}/index.html"
+      /usr/bin/az storage blob upload-batch --debug --account-name $(STORAGE_ACCOUNT_NAME) --account-key $(ACCOUNT_KEY) --destination allure-reports --destination-path ${today_date} --source $(System.DefaultWorkingDirectory)/target/site/allure-maven-plugin
+      echo "$(BLOB_STORE_URL)/allure-reports/${today_date}/index.html"
